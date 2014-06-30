@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="guestbook_query">
+	<typeAlias alias="guestbook" type="com.test.guestbook.Guestbook" />
+	<select id="list" resultClass="hashmap">
+	 <![CDATA[ SELECT * FROM guestbook ]]></select>
+	 
+	<select id="select" parameterClass="String" resultClass="guestbook"> 
+	 <![CDATA[ select guestbook.seq,guestbook.email,guestbook.passwd,guestbook.content from guestbook where guestbook.seq=#seq#]]></select>
+	 
+	<insert id="insert" parameterClass="guestbook"> 
+	 <![CDATA[ INSERT INTO guestbook(email,passwd,content,createtime) VALUES(#email#,#passwd#,#content#,#createtime#); ]]></insert>
+	 
+	<delete id="delete"> 
+	 <![CDATA[ DELETE FROM guestbook WHERE seq=#seq#]]></delete>
+	 
+	<update id="update">
+	<![CDATA[ update guestbook set content=#content#,modifiedtime=#modifiedtime# where seq=#seq# ]]></update>
+</sqlMap>
+   

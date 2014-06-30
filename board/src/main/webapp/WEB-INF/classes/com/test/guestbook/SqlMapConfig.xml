@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN" "http://www.ibatis.com/dtd/sql-map-config-2.dtd">
+<sqlMapConfig>
+<!-- 쿼리문 모음 저장소 -->
+	<!-- settings / -->
+	<!-- Common -->
+	<!-- Announce.xml을 쓰겠다고 선언 -->
+	<sqlMap resource="com/test/guestbook/Guestbook.xml" />
+
+</sqlMapConfig>
