@@ -4,15 +4,15 @@
 <head>
 	<title>Guestbook</title>
 </head>
+
 <body>
-<h1>
-	Hello Guestbook!!! 
-</h1>
-<br>
+	<h1>
+		Hello Guestbook!!! 
+	</h1>
+	<br>
+	<input name="write" type="button" value="새글쓰기" class="inputb" onclick="javascript:location.href='/writeForm.do';" />
  
-<input name="write" type="button" value="새글쓰기" class="inputb" onclick="javascript:location.href='/writeForm.do';" />
- 
-<table border="1" width="500" height="100"> <!-- 테이블 사이즈 -->
+	<table border="1" width="500" height="100"> <!-- 테이블 사이즈 -->
 		<!-- for문 boardList 반복 -->
 		<c:forEach var="row" items="${guestbooklist}">
 			<tr>

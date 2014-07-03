@@ -2,37 +2,36 @@
 <%@ page session="false" contentType="text/html; charset=utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<script type="text/javascript">
-function check(){
-	var str2 = document.getElementById('passwd');
-	var str3 = document.getElementById('content');
-	
-	if(str2.value == '' || str2.value == null){
-		alert('패스워드를 입력하세요');
-		return false;
-	}
-	if(str3.value == '' || str3.value == null){
-		alert('내용을 입력하세요');
-		return false;
-	} 	
-	return save();
-};
-
-function save(){
-	var str4 = document.getElementById('modifier');
-	str4.submit(); 
-}
-
-function checkpasswd(incorrectpasswd){
-	if(incorrectpasswd){
-		alert('잘못된 패스워드입니다.');	
-	}
-}
-
-</script>
-<title>수정하기</title>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript">
+			function check(){
+				var str2 = document.getElementById('passwd');
+				var str3 = document.getElementById('content');
+				
+				if(str2.value == '' || str2.value == null){
+					alert('패스워드를 입력하세요');
+					return false;
+				}
+				if(str3.value == '' || str3.value == null){
+					alert('내용을 입력하세요');
+					return false;
+				} 	
+				return save();
+			};
+			
+			function save(){
+				var str4 = document.getElementById('modifier');
+				str4.submit(); 
+			}
+			
+			function checkpasswd(incorrectpasswd){
+				if(incorrectpasswd){
+					alert('잘못된 패스워드입니다.');	
+				}
+			}
+		</script>
+	<title>수정하기</title>
 </head> 
 
 <body>

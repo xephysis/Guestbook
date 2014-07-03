@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.test</groupId>
 	<artifactId>board</artifactId>
-	<name>abc</name>
+	<name>guestbook</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
@@ -13,6 +13,7 @@
 		<org.aspectj-version>1.6.9</org.aspectj-version>
 		<org.slf4j-version>1.5.10</org.slf4j-version>
 	</properties>
+	
 	<!-- cubrid driver -->
 	<repositories>
 		<repository>
@@ -43,24 +44,28 @@
 			<artifactId>spring-test</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
+		
 		<!-- mysql driver -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.0.3</version>
 		</dependency>
+		
 		<!-- cubrid driver -->
 		<dependency>
 			<groupId>cubrid</groupId>
 			<artifactId>cubrid-jdbc</artifactId>
 			<version>9.3.0.0206</version>
 		</dependency>
+		
 		<!-- dbcp jdbc connection pool -->
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.2.2</version>
 		</dependency>
+		
 		<!-- ibatis -->
 		<dependency>
 			<groupId>org.apache.ibatis</groupId>
@@ -74,6 +79,7 @@
 			<artifactId>cglib</artifactId>
 			<version>2.2</version>
 		</dependency>
+		
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -186,6 +192,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
 	<build>
 		<plugins>
 			<plugin>
